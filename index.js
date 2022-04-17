@@ -63,7 +63,6 @@ function tweetQuran() {
       console.error(err)
     })
 }
-tweetQuran();
 
 function daysIntoYear() {
   const now = new Date();
@@ -80,5 +79,5 @@ function daysIntoYear() {
 
 cron.schedule('07 02 * * *', () => {
   tweetQuote();
-
+  tweetQuran();
 });
